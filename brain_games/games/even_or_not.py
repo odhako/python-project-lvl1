@@ -6,7 +6,6 @@ from random import randint
 
 def calculations():
     number = randint(1, 100)
-    operation = number % 2
     question = str(number)
     if number % 2 == 0:
         right_answer = 'yes'
