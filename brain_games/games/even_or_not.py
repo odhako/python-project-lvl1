@@ -1,34 +1,25 @@
 #!/usr/bin/env python
 
 
-import prompt
 from random import randint
-from brain_games.cli import enter_name
 
 
-def even():
-    print('Welcome to the Brain Games!')
-    name = enter_name()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def calculations():
+    number = randint(1, 100)
+    operation = number % 2
+    question = str(number)
+    if number % 2 == 0:
+        right_answer = 'yes'
+        return question, right_answer
+    else:
+        right_answer = 'no'
+        return question, right_answer
+
+
+def game_actions():
     i = 0
+    game_contents = []
     while i < 3:
-        number = randint(1, 100)
-        print('Question: ' + str(number))
-        answer = prompt.string('Your answer: ')
-        if number % 2 == 0 and str.lower(answer) == 'yes':
-            print('Correct!')
-            i += 1
-        elif number % 2 == 1 and str.lower(answer) == 'no':
-            print('Correct!')
-            i += 1
-        else:
-            if number % 2 == 0:
-                print(str(answer) + " is wrong answer ;(. "
-                      "Correct answer was 'yes'.")
-            else:
-                print(str(answer) + " is wrong answer ;(. "
-                      "Correct answer was 'no'.")
-            print("Let's try again, " + name + '!')
-            break
-    if i == 3:
-        print('Congratulations, ' + name + '!')
+        game_contents.append(calculations())
+        i += 1
+    return game_contents
