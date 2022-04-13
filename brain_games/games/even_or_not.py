@@ -3,12 +3,12 @@
 
 import prompt
 from random import randint
+from brain_games.cli import enter_name
 
 
 def even():
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + '!')
+    name = enter_name()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
     while i < 3:
@@ -23,9 +23,11 @@ def even():
             i += 1
         else:
             if number % 2 == 0:
-                print(str(answer) + " is wrong answer ;(. Correct answer was 'yes'.")
+                print(str(answer) + " is wrong answer ;(. "
+                      "Correct answer was 'yes'.")
             else:
-                print(str(answer) + " is wrong answer ;(. Correct answer was 'no'.")
+                print(str(answer) + " is wrong answer ;(. "
+                      "Correct answer was 'no'.")
             print("Let's try again, " + name + '!')
             break
     if i == 3:
