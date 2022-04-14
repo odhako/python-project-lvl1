@@ -4,7 +4,11 @@
 from random import randint
 
 
-def calculations():
+def game_rules():
+    return 'What number is missing in the progression?'
+
+
+def game_actions():
     start = randint(1, 20)
     step = randint(1, 5)
     progression = ''
@@ -20,12 +24,3 @@ def calculations():
             progression += f'{start + (i * step)} '
             i += 1
     return progression, right_answer
-
-
-def game_actions():
-    i = 0
-    game_contents = []
-    while i < 3:
-        game_contents.append(calculations())
-        i += 1
-    return game_contents
