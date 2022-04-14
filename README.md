@@ -2,6 +2,6 @@
 [![Actions Status](https://github.com/odhako/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/odhako/python-project-lvl1/actions)
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 [![run-flake8](https://github.com/odhako/python-project-lvl1/actions/workflows/run-flake8.yml/badge.svg)](https://github.com/odhako/python-project-lvl1/actions/workflows/run-flake8.yml)
-brain-even - https://asciinema.org/a/5o9UoB61LuzFlBa3NkXxBnyqz
-brain-calc - https://asciinema.org/a/Q6mmg66bNFCLGxmsRJlrI2btr
-brain-gcd - https://asciinema.org/a/dbd9YQozgeRA2ycynS9BrQjOh
+- brain-even - https://asciinema.org/a/5o9UoB61LuzFlBa3NkXxBnyqz
+- brain-calc - https://asciinema.org/a/Q6mmg66bNFCLGxmsRJlrI2btr
+- brain-gcd - https://asciinema.org/a/dbd9YQozgeRA2ycynS9BrQjOh
