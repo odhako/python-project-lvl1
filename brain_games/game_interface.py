@@ -14,7 +14,7 @@ def game_interface(game_rules, game_contains):
         question, right_answer = game_contains[i]
         print('Question: ' + question)
         answer = prompt.string('Your answer: ')
-        if str(answer) == str(right_answer):
+        if str.lower(answer) == str(right_answer):
             print('Correct!')
             i += 1
         else:
