@@ -23,6 +23,6 @@ def calc_gcd(x, y):
 def game_actions():
     number_1 = randint(1, 100)
     number_2 = randint(1, 100)
-    question = f'{number_1}, {number_2}'
+    question = f'{number_1} {number_2}'
     right_answer = calc_gcd(number_1, number_2)
     return question, right_answer
