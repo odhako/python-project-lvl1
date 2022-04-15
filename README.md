@@ -5,20 +5,25 @@
 
 ## Games for bash shell about numbers.
 
-##### There is games and their rules:
-
-- **brain-games** - this is a warm welcoming message :)
-- **brain-even** - Answer "yes" if the number is even, otherwise answer "no". [Asciinema demo](https://asciinema.org/a/5o9UoB61LuzFlBa3NkXxBnyqz)
-- **brain-calc** - What is the result of the expression? [Asciinema demo](https://asciinema.org/a/Q6mmg66bNFCLGxmsRJlrI2btr)
-- **brain-gcd** - Find the greatest common divisor of given numbers. [Asciinema demo](https://asciinema.org/a/dbd9YQozgeRA2ycynS9BrQjOh)
-- **brain-progression** - What number is missing in the progression? [Asciinema demo](https://asciinema.org/a/iJRlvq1wdLBZWFhCDO6Ju1KDC)
-- **brain-prime** - Answer "yes" if given number is prime. Otherwise answer "no". [Asciinema demo](https://asciinema.org/a/Ai5EWOTJpQQfeGhTcyBxvIS9A)
-
-##### Manual installation and launch:
+#### Manual installation and launch:
 - Install poetry https://python-poetry.org/docs/master/#installing-with-the-official-installer
 - Download or clone source code
 - Open directory in a terminal
 - `poetry install`
 - `poetry build`
 - `python3 -m pip install --user dist/*.whl`
+
 Now you can launch game in any directory by typing its name.
+
+Installation demo:
+
+[![asciicast](https://asciinema.org/a/487817.svg)](https://asciinema.org/a/487817)
+
+#### There is games and their rules:
+
+- **brain-games** - this is a warm welcoming message. [Asciinema demo](https://asciinema.org/a/487826)
+- **brain-even** - Answer "yes" if the number is even, otherwise answer "no". [Asciinema demo](https://asciinema.org/a/487818)
+- **brain-calc** - What is the result of the expression? [Asciinema demo](https://asciinema.org/a/487820)
+- **brain-gcd** - Find the greatest common divisor of given numbers. [Asciinema demo](https://asciinema.org/a/487821)
+- **brain-progression** - What number is missing in the progression? [Asciinema demo](https://asciinema.org/a/487822)
+- **brain-prime** - Answer "yes" if given number is prime. Otherwise answer "no". [Asciinema demo](https://asciinema.org/a/487823)
