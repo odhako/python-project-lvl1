@@ -8,12 +8,12 @@ def game_rules():
     return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_a_prime(x):
+def is_a_prime(number):
     divider = 2
-    if x == 1:
+    if number == 1:
         return True
-    while x / 2 >= divider:
-        if x % divider == 0:
+    while number / 2 >= divider:
+        if number % divider == 0:
             return False
         else:
             divider += 1

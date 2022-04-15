@@ -8,11 +8,11 @@ def game_rules():
     return 'Find the greatest common divisor of given numbers.'
 
 
-def calc_gcd(x, y):
+def calc_gcd(number_1, number_2):
     i = 1
     dividers = []
-    while i < x or i < y:
-        if x % i == 0 and y % i == 0:
+    while i < number_1 or i < number_2:
+        if number_1 % i == 0 and number_2 % i == 0:
             dividers.append(i)
             i += 1
         else:
