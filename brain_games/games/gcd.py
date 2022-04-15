@@ -4,6 +4,10 @@
 from random import randint
 
 
+def game_rules():
+    return 'Find the greatest common divisor of given numbers.'
+
+
 def calc_gcd(x, y):
     i = 1
     dividers = []
@@ -16,18 +20,9 @@ def calc_gcd(x, y):
     return(max(dividers))
 
 
-def calculations():
+def game_actions():
     number_1 = randint(1, 100)
     number_2 = randint(1, 100)
     question = f'{number_1}, {number_2}'
     right_answer = calc_gcd(number_1, number_2)
     return question, right_answer
-
-
-def game_actions():
-    i = 0
-    game_contents = []
-    while i < 3:
-        game_contents.append(calculations())
-        i += 1
-    return game_contents

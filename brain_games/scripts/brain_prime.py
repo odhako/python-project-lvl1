@@ -2,15 +2,11 @@
 
 
 from brain_games.game_interface import game_interface
-from brain_games.games.prime import game_actions
-
-
-game_rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+from brain_games.games.prime import game_actions, game_rules
 
 
 def main():
-    game_contains = game_actions()
-    game_interface(game_rules, game_contains)
+    game_interface(game_rules, game_actions)
 
 
 if __name__ == '__main__':

@@ -4,6 +4,10 @@
 from random import randint
 
 
+def game_rules():
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def is_a_prime(x):
     divider = 2
     if x == 1:
@@ -16,7 +20,7 @@ def is_a_prime(x):
     return True
 
 
-def calculations():
+def game_actions():
     number = randint(1, 100)
     question = str(number)
     if is_a_prime(number):
@@ -25,12 +29,3 @@ def calculations():
     else:
         right_answer = 'no'
         return question, right_answer
-
-
-def game_actions():
-    i = 0
-    game_contents = []
-    while i < 3:
-        game_contents.append(calculations())
-        i += 1
-    return game_contents
