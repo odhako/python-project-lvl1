@@ -8,7 +8,7 @@ def game_rules():
     return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_a_prime(number):
+def is_prime(number):
     divider = 2
     if number == 1:
         return True
@@ -23,7 +23,7 @@ def is_a_prime(number):
 def game_actions():
     number = randint(1, 100)
     question = str(number)
-    if is_a_prime(number):
+    if is_prime(number):
         right_answer = 'yes'
         return question, right_answer
     else:

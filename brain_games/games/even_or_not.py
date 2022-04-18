@@ -13,7 +13,6 @@ def game_actions():
     question = str(number)
     if number % 2 == 0:
         right_answer = 'yes'
-        return question, right_answer
     else:
         right_answer = 'no'
-        return question, right_answer
+    return question, right_answer
