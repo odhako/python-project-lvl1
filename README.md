@@ -1,6 +1,6 @@
 #### Hexlet tests and linter status:
 [![Actions Status](https://github.com/odhako/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/odhako/python-project-lvl1/actions)
-[![Codeclimate](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8f8885be462231b93696/maintainability)](https://codeclimate.com/github/odhako/python-project-lvl1/maintainability)
 [![run-flake8](https://github.com/odhako/python-project-lvl1/actions/workflows/run-flake8.yml/badge.svg)](https://github.com/odhako/python-project-lvl1/actions/workflows/run-flake8.yml)
 
 ## Games for bash shell about numbers.
