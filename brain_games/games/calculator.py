@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-from random import randint
+from random import randint, choice
 
 
 def game_rules():
@@ -11,16 +11,17 @@ def game_rules():
 def game_actions():
     number_1 = randint(1, 30)
     number_2 = randint(1, 30)
-    operation = randint(1, 3)
-    if operation == 1:
+    operation = choice(['+', '-', '*'])
+    if operation == '+':
         question = f'{number_1} + {number_2}'
         right_answer = number_1 + number_2
-        return question, right_answer
-    elif operation == 2:
+    elif operation == '-':
         question = f'{number_1} - {number_2}'
         right_answer = number_1 - number_2
-        return question, right_answer
-    elif operation == 3:
+    elif operation == '*':
         question = f'{number_1} * {number_2}'
         right_answer = number_1 * number_2
-        return question, right_answer
+    else:
+        question = ''
+        right_answer = 0
+    return question, right_answer

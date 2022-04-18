@@ -1,19 +1,17 @@
 #!/usr/bin/env python
 
 
-# ??? Разделить движок на приветствие, три задания и поздравление
-
-
 import prompt
-from brain_games.cli import enter_name
 
 
 def game_interface(game_rules, game_actions):
     print('Welcome to the Brain Games!')
-    name = enter_name()
+    name = prompt.string('May I have your name? ')
+    print('Hello, ' + name + '!')
     print(game_rules())
+    number_of_games = 3
     i = 0
-    while i < 3:
+    while i < number_of_games:
         question, right_answer = game_actions()
         print('Question: ' + question)
         answer = prompt.string('Your answer: ')
@@ -25,5 +23,5 @@ def game_interface(game_rules, game_actions):
                   f"Correct answer was {right_answer}")
             print(f"Let's try again, {name}!")
             break
-    if i == 3:
+    if i == number_of_games:
         print('Congratulations, ' + name + '!')
