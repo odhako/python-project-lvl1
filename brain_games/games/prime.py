@@ -11,7 +11,7 @@ def game_rules():
 def is_prime(number):
     divider = 2
     if number == 1:
-        return True
+        return False
     while number / 2 >= divider:
         if number % divider == 0:
             return False
@@ -27,4 +27,4 @@ def game_actions():
         right_answer = 'yes'
     else:
         right_answer = 'no'
-    return question, right_answer
+    return question, str(right_answer)

@@ -24,4 +24,4 @@ def game_actions():
     else:
         question = ''
         right_answer = 0
-    return question, right_answer
+    return question, str(right_answer)

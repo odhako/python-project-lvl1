@@ -23,4 +23,4 @@ def game_actions():
         else:
             progression += f'{start + (i * step)} '
             i += 1
-    return progression, right_answer
+    return progression, str(right_answer)

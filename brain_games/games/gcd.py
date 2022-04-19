@@ -25,4 +25,4 @@ def game_actions():
     number_2 = randint(1, 100)
     question = f'{number_1} {number_2}'
     right_answer = calc_gcd(number_1, number_2)
-    return question, right_answer
+    return question, str(right_answer)

@@ -15,4 +15,4 @@ def game_actions():
         right_answer = 'yes'
     else:
         right_answer = 'no'
-    return question, right_answer
+    return question, str(right_answer)
