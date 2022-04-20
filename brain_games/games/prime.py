@@ -20,8 +20,12 @@ def is_prime(number):
     return True
 
 
+NUMBER_MIN = 1
+NUMBER_MAX = 100
+
+
 def round_generator():
-    number = randint(1, 100)
+    number = randint(NUMBER_MIN, NUMBER_MAX)
     question = str(number)
     if is_prime(number):
         right_answer = 'yes'

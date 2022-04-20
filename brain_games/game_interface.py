@@ -12,7 +12,6 @@ def game_interface(get_rules, round_generator):
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
     print(get_rules())
-    ROUND_COUNT = 3
     i = 0
     while i < ROUND_COUNT:
         question, right_answer = round_generator()
@@ -26,5 +25,5 @@ def game_interface(get_rules, round_generator):
                   f"Correct answer was {right_answer}")
             print(f"Let's try again, {name}!")
             break
-    if i == ROUND_COUNT:
+    else:
         print('Congratulations, ' + name + '!')
