@@ -11,7 +11,7 @@ def get_rules():
 def calc_gcd(number_1, number_2):
     i = 1
     dividers = []
-    while i < number_1 or i < number_2:
+    while i <= number_1 or i <= number_2:
         if number_1 % i == 0 and number_2 % i == 0:
             dividers.append(i)
             i += 1
