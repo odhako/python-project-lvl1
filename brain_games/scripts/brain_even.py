@@ -2,11 +2,11 @@
 
 
 from brain_games.game_interface import game_interface
-from brain_games.games.even_or_not import game_actions, game_rules
+from brain_games.games.even_or_not import round_generator, get_rules
 
 
 def main():
-    game_interface(game_rules, game_actions)
+    game_interface(get_rules, round_generator)
 
 
 if __name__ == '__main__':

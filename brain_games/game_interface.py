@@ -4,15 +4,18 @@
 import prompt
 
 
-def game_interface(game_rules, game_actions):
+ROUND_COUNT = 3
+
+
+def game_interface(get_rules, round_generator):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
-    print(game_rules())
-    number_of_games = 3
+    print(get_rules())
+    ROUND_COUNT = 3
     i = 0
-    while i < number_of_games:
-        question, right_answer = game_actions()
+    while i < ROUND_COUNT:
+        question, right_answer = round_generator()
         print('Question: ' + question)
         answer = str.lower(prompt.string('Your answer: '))
         if answer == right_answer:
@@ -23,5 +26,5 @@ def game_interface(game_rules, game_actions):
                   f"Correct answer was {right_answer}")
             print(f"Let's try again, {name}!")
             break
-    if i == number_of_games:
+    if i == ROUND_COUNT:
         print('Congratulations, ' + name + '!')

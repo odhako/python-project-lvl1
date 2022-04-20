@@ -4,11 +4,11 @@
 from random import randint
 
 
-def game_rules():
+def get_rules():
     return 'What number is missing in the progression?'
 
 
-def game_actions():
+def round_generator():
     start = randint(1, 20)
     step = randint(1, 5)
     progression = ''

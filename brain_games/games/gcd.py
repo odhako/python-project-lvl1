@@ -4,7 +4,7 @@
 from random import randint
 
 
-def game_rules():
+def get_rules():
     return 'Find the greatest common divisor of given numbers.'
 
 
@@ -20,7 +20,7 @@ def calc_gcd(number_1, number_2):
     return(max(dividers))
 
 
-def game_actions():
+def round_generator():
     number_1 = randint(1, 100)
     number_2 = randint(1, 100)
     question = f'{number_1} {number_2}'

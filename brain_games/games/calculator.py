@@ -4,11 +4,11 @@
 from random import randint, choice
 
 
-def game_rules():
+def get_rules():
     return 'What is the result of the expression?'
 
 
-def game_actions():
+def round_generator():
     number_1 = randint(1, 30)
     number_2 = randint(1, 30)
     operation = choice(['+', '-', '*'])

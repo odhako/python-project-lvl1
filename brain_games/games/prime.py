@@ -4,7 +4,7 @@
 from random import randint
 
 
-def game_rules():
+def get_rules():
     return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
@@ -20,7 +20,7 @@ def is_prime(number):
     return True
 
 
-def game_actions():
+def round_generator():
     number = randint(1, 100)
     question = str(number)
     if is_prime(number):
