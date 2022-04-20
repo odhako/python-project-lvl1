@@ -20,6 +20,10 @@ def is_prime(number):
     return True
 
 
+NUMBER_MIN = 1
+NUMBER_MAX = 100
+
+
 def round_generator():
     number = randint(1, 100)
     question = str(number)
