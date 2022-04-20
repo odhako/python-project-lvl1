@@ -22,7 +22,7 @@ def round_generator():
     progression += f'{start} '
     i = 1
     blank_step = randint(1, PROGRESSION_LENGHT)
-    while i <= PROGRESSION_LENGHT:
+    while i < PROGRESSION_LENGHT:
         if i == blank_step:
             right_answer = (start + (i * step))
             progression += '.. '
