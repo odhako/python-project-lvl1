@@ -1,15 +1,14 @@
 from random import randint
 
 
-def get_rules():
-    return 'What number is missing in the progression?'
+RULES = 'What number is missing in the progression?'
 
 
 START_MIN = 1
 START_MAX = 20
 STEP_MIN = 1
 STEP_MAX = 5
-PROGRESSION_LENGHT = 10
+PROGRESSION_LENGTH = 10
 
 
 def round_generator():
@@ -17,8 +16,8 @@ def round_generator():
     step = randint(STEP_MIN, STEP_MAX)
     progression = ''
     i = 1
-    blank_step = randint(1, PROGRESSION_LENGHT)
-    while i <= PROGRESSION_LENGHT:
+    blank_step = randint(1, PROGRESSION_LENGTH)
+    while i <= PROGRESSION_LENGTH:
         if i == blank_step:
             right_answer = (start + (i * step))
             progression += '.. '

@@ -1,8 +1,7 @@
 from random import randint, choice
 
 
-def get_rules():
-    return 'What is the result of the expression?'
+RULES = 'What is the result of the expression?'
 
 
 NUMBER_MIN = 1

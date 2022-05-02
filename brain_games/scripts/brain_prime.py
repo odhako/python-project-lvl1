@@ -2,11 +2,11 @@
 
 
 from brain_games.game_start import game_start
-from brain_games.games.prime import round_generator, get_rules
+from brain_games.games.prime import round_generator, RULES
 
 
 def main():
-    game_start(get_rules, round_generator)
+    game_start(RULES, round_generator)
 
 
 if __name__ == '__main__':

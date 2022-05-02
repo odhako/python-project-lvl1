@@ -1,8 +1,7 @@
 from random import randint
 
 
-def get_rules():
-    return 'Answer "yes" if the number is even, otherwise answer "no".'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 NUMBER_MIN = 1
