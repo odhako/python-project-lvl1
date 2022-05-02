@@ -1,7 +1,7 @@
 import prompt
 
 
-ROUND_COUNT = 3
+ROUNDS_COUNT = 3
 
 
 def game_interface(get_rules, round_generator):
@@ -10,7 +10,7 @@ def game_interface(get_rules, round_generator):
     print('Hello, ' + name + '!')
     print(get_rules())
     i = 0
-    while i < ROUND_COUNT:
+    while i < ROUNDS_COUNT:
         question, right_answer = round_generator()
         print('Question: ' + question)
         answer = str.lower(prompt.string('Your answer: '))
