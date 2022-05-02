@@ -19,5 +19,5 @@ lint:
 test:
 	poetry install
 	poetry build
-	pip uninstall hexlet-code -y
+	pip3 uninstall hexlet-code -y
 	python3 -m pip install --user dist/*.whl
