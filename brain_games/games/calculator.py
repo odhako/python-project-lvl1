@@ -12,14 +12,12 @@ def generate_round():
     number_1 = randint(NUMBER_MIN, NUMBER_MAX)
     number_2 = randint(NUMBER_MIN, NUMBER_MAX)
     operation = choice(['+', '-', '*'])
+    question = f'{number_1} {operation} {number_2}'
     if operation == '+':
-        question = f'{number_1} + {number_2}'
         right_answer = number_1 + number_2
     elif operation == '-':
-        question = f'{number_1} - {number_2}'
         right_answer = number_1 - number_2
     elif operation == '*':
-        question = f'{number_1} * {number_2}'
         right_answer = number_1 * number_2
     else:
         question = ''
