@@ -11,7 +11,7 @@ STEP_MAX = 5
 PROGRESSION_LENGTH = 10
 
 
-def round_generator():
+def generate_round():
     start = randint(START_MIN, START_MAX)
     step = randint(STEP_MIN, STEP_MAX)
     progression = ''

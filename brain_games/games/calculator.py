@@ -8,7 +8,7 @@ NUMBER_MIN = 1
 NUMBER_MAX = 30
 
 
-def round_generator():
+def generate_round():
     number_1 = randint(NUMBER_MIN, NUMBER_MAX)
     number_2 = randint(NUMBER_MIN, NUMBER_MAX)
     operation = choice(['+', '-', '*'])

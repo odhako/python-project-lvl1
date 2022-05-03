@@ -20,7 +20,7 @@ NUMBER_MIN = 1
 NUMBER_MAX = 100
 
 
-def round_generator():
+def generate_round():
     number = randint(NUMBER_MIN, NUMBER_MAX)
     question = str(number)
     if is_prime(number):
