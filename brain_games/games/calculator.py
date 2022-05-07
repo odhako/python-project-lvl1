@@ -21,5 +21,5 @@ def generate_round():
         right_answer = number_1 * number_2
     else:
         question = ''
-        right_answer = 0
+        right_answer = 'Error'
     return question, str(right_answer)

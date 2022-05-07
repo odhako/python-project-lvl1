@@ -27,4 +27,4 @@ def generate_round():
         right_answer = 'yes'
     else:
         right_answer = 'no'
-    return question, str(right_answer)
+    return question, right_answer

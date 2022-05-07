@@ -1,6 +1,5 @@
 import prompt
 
-
 ROUNDS_COUNT = 3
 
 
@@ -12,6 +11,8 @@ def game_start(rules, round_generator):
     i = 0
     while i < ROUNDS_COUNT:
         question, right_answer = round_generator()
+        if right_answer == 'Error':
+            raise AssertionError('Invalid quiestion')
         print('Question: ' + question)
         answer = str.lower(prompt.string('Your answer: '))
         if answer == right_answer:
